@@ -1,2 +1,18 @@
-<h1>Books#show</h1>
-<p>Find me in app/views/books/show.html.erb</p>
+<p>Book was successfully created.</p>
+
+    <% @books.each do |book| %>
+
+<p>
+  <strong>Title:</strong>
+  <span>
+    <%= link_to book.title, "/books/#{book.id}" %>
+  </span>
+</p>
+<p>
+  <strong>Body:</strong>
+  <span>
+    <%= link_to book.body, "/books/#{book.id}" %>
+  </span>
+</p>
+
+<% end %>
