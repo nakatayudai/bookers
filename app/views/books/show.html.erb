@@ -1,18 +1,16 @@
 <p>Book was successfully created.</p>
 
-    <% @books.each do |book| %>
 
 <p>
   <strong>Title:</strong>
   <span>
-    <%= link_to book.title, "/books/#{book.id}" %>
+    <%=  @book.title %>
   </span>
 </p>
 <p>
   <strong>Body:</strong>
   <span>
-    <%= link_to book.body, "/books/#{book.id}" %>
+    <%= @book.body %>
   </span>
 </p>
 
-<% end %>
