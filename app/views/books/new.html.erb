@@ -1,5 +1,22 @@
 <p>Book was successfully created.</p>
 
+
+<% if @books.errors.any? %>
+
+  <%= @books.errors.count %>件のエラーが発生しました。
+
+  <ul>
+    <% @books.errors.full_messages.each do |message| %>
+      <li>
+        <%= message %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+
+
+
     <% @books.each do |book| %>
 
 <p>
