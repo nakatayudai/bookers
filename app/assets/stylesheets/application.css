@@ -13,28 +13,20 @@
  *= require_tree .
  *= require_self
  */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 .nav{
-    margin: auto;
+  margin: 30 40px;
 }
 
-.main{
-  margin auto;
-  padding 20px;
-}
+
 
 .nav-list {
   text-align: center;
-  padding: 30px;
+  padding: 0 50px ;
 }
 
 .nav-list-item {
   list-style: none;
   display: inline-block;
-  margin: 0 auto;
-  padding: auto;
+  margin: 30px 50px;
 }
